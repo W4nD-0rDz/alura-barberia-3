@@ -1,0 +1,47 @@
+#banner {
+   width: 100%;
+}
+.principal {
+   background-color: #bbbbbb;
+   padding: 20px;
+}
+.titulo-centralizado {
+   margin: 20px;
+   text-align: center;
+
+}
+p {
+   margin: 15px;
+   color: #000000;
+   text-align: center;
+}
+em strong {
+   color: #ff0000;
+}
+#mision {
+   font-size: 20px;
+}
+
+.secundario{
+   position: relative;
+   z-index: 1;
+   padding: 20px;
+   background: url(img/diferenciales.jpg);
+   background-size: cover;
+   color: #FFFFFF;
+}
+
+.diferenciales {
+   position: relative; /* Change from absolute to relative */
+    text-align: left;
+    font-size: 15px;
+    padding: 20px;
+}
+.items {
+   margin: 20px 0;
+   font-style: italic;
+}
+
+.imagenDiferenciales {
+   width: 100%;
+}

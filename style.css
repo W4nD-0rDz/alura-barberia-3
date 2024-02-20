@@ -44,7 +44,7 @@ nav a:hover {
 main {
    max-width: 940px;
    margin: auto;
-   /* background: linear-gradient(#fefefe, #000000); */
+   background: linear-gradient(#fefefe, #000000);
 }
 
 .principal,
@@ -56,18 +56,6 @@ main {
    padding: 3em 0;
 }
 
-.principal {
-   background-color: #fefefe;
-}
-.mapa {
-   background: linear-gradient(#fefefe, #888888);
-}
-.secundario {
-   background-color: #888888;
-}
-.terciario {
-   background: linear-gradient(#888888, #000000);
-}
 
 .principal-contenido,
 .mapa-contenido,
@@ -140,7 +128,7 @@ img + p{background: purple;}
 /*inline-block >>> no debe haber espacio entre ul y img (HTML)*/
 .lista-diferenciales {
    width: 40%;
-   display: inline-block; 
+   display: inline-block;
    vertical-align: top;
 }
 
@@ -166,24 +154,19 @@ img + p{background: purple;}
 
 .imagen-diferenciales {
    width: 60%;
-   display: inline-block;
+   /* display: inline-block; */
    vertical-align: top;
    transition: 400ms;
-   box-shadow: 10px 10px 30px 15px #000000;
+   box-shadow: 10px 10px 30px 15px #555555;
 }
 
 .imagen-diferenciales:hover {
    opacity: 0.3;
 }
-/* 
-
-
-
-.imagen-diferenciales {
+/*.imagen-diferenciales {
    width: 60%;
    box-shadow: 10px 10px 10px #555555;
 } */
-
 /* .imagen-diferenciales:hover {
    opacity: 75%;
    transition: 300ms;
@@ -314,7 +297,6 @@ footer {
    padding: 40px;
    text-align: center;
 }
-
 footer .copyright {
    margin: 20px;
    color: #ffffff;
@@ -322,28 +304,50 @@ footer .copyright {
 }
 
 /*excepciones para pantallas de menor tamaño*/
-@media screen and (max-width: 480px) {
+@media screen and (max-device-width: 480px) {
+   /*HEADER*/
    .caja {
       width: 100%;
    }
    .caja h1 {
       display: block;
+      width: 100%;
       text-align: center;
-      padding: 40px;
    }
    nav {
-      display: block;
+      position: static;
       text-align: center;
       padding: auto;
-      margin-top: 10px;
+      margin-bottom: 10px;
    }
    .menu li {
-      display: grid;
+      width: 100%;
+      display: block;
+      margin-top: 10px;
       margin-bottom: 10px;
    }
    .menu a {
-      font-size: 5em;
+      display: block;
+      font-size: 4em;
    }
+
+   /*MAIN*/
+   main{
+      background: none;
+   }
+.principal {
+   background-color: #fefefe;
+}
+.mapa {
+   background: linear-gradient(#fefefe, #888888);
+}
+.secundario {
+   background-color: #888888;
+}
+.terciario {
+   background: linear-gradient(#888888, #000000);
+}
+
 
    .caja,
    .principal,
@@ -354,8 +358,22 @@ footer .copyright {
    .video {
       width: auto;
    }
+   /* .items:nth-child(5) {
+      display: none;
+      
+   } */
+   #mision,
+   #mision ~ * {
+      display: none;
+   }
    .lista-diferenciales,
    .imagen-diferenciales {
       width: 100%;
+      display: block;
+      margin-bottom: 0.25em;
    }
+
+   /*PRODUCTOS*/
+
+   /*CONTACTO*/
 }

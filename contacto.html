@@ -31,20 +31,20 @@
       <main class="contacto">
          <form>
             <label for="nombreapellido">Nombre y Apellido</label>
-            <input class="input-padron" id="nombreapellido" type="text" required placegolder="email@dominio.com">
+            <input class="input-padron" id="nombreapellido" type="text" required placeholder="Juan Perez"/>
             <label for="correoelectronico">Correo Electrónico</label>
             <!-- mobile input types -->
-            <input class="input-padron" id="correoelectronico" type="email" requerid>
+            <input class="input-padron" id="correoelectronico" type="email" required placeholder="email@dominio.com"/>
             <label for="telefono">Teléfono de Contacto</label>
-            <input class="input-padron" id="telefono" type="tel" placeholder="(XX) XXXX XXXX">
+            <input class="input-padron" id="telefono" type="tel" placeholder="(XX) XXXX XXXX"/>
             <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" cols="70" rows="5"></textarea placegolder="Ingresa aquí tu mensaje">
+            <textarea class="textarea-padron" rows="5" required placeholder="Ingresa aquí tu mensaje"></textarea>
             <!-- cuando los datos apuntan a un mismo conjunto fieldset -->
             <fieldset>
                <legend class="pregunta">¿Cómo le gustaría que lo contactemos?</legend>
-               <label for="radio-email"><input name="contacto" id="radio-email" type="radio" value="E-mail">E-mail</label>
-               <label for="radio-telefono"><input name="contacto" id="radio-telefono" type="radio" value="Teléfono">Teléfono</label>
-               <label for="radio-wapp"><input name="contacto" id="radio-wapp" type="radio" value="Whatsapp" checked>Whatsapp</label>
+               <label for="radio-email"><input name="contacto" id="radio-email" type="radio" value="E-mail"/>E-mail</label>
+               <label for="radio-telefono"><input name="contacto" id="radio-telefono" type="radio" value="Teléfono"/>Teléfono</label>
+               <label for="radio-wapp"><input name="contacto" id="radio-wapp" type="radio" value="Whatsapp" checked/>Whatsapp</label>
             </fieldset>
             <fieldset>
                <legend class="pregunta">¿En qué horario prefiere ser atendido?</legend>
